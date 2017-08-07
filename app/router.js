@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('psus');
-  this.route('input');
+  this.route('input',{path:'/'});
 });
 
 export default Router;
