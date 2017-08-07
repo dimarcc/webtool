@@ -1,0 +1,25 @@
+<h2>list of components</h2>
+
+<select>
+  {{#each model as |comps|}}
+      <option data-voltage="{{comps.voltage}}" data-power="{{comps.power}}">{{comps.psuname}}</option>
+  {{/each}}
+</select>
+
+<select>
+  {{#each model as |comps|}}
+      <option>{{comps.ldrname}}</option>
+  {{/each}}
+</select>
+
+<select>
+  {{#each model as |comps|}}
+      <option>{{comps.jmpname}}</option>
+  {{/each}}
+</select>
+
+<select>
+  {{#each model as |comps|}}
+      <option>{{comps.wpxname}}</option>
+  {{/each}}
+</select>

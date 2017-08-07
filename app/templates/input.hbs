@@ -1,0 +1,70 @@
+<body>
+    <div class="container12">
+
+        <h2 id="home">Let's find the right product combination for your needs...</h2>
+
+        <p id="instr">Please choose an item from each drop-down and hit that "calculate" button!</p>
+
+        <form action="" method="POST">
+
+                <div class="row">
+
+                    <div class ="column2">
+
+                      <select class="large-fld">
+                        {{#each PSUs as |PSUs|}}
+                            <option data-voltage="{{PSUs.voltage}}" data-power="{{PSUs.power}}">{{PSUs.psuname}}</option>
+                        {{/each}}
+                      </select>
+
+                    </div>
+
+                    <div class ="column2">
+
+                      <select class="large-fld">
+                        {{#each LDRs as |LDRs|}}
+                            <option>{{LDRs}}</option>
+                        {{/each}}
+                      </select>
+
+                    </div>
+
+                    <div class ="column2">
+
+                      <select class="large-fld">
+                        {{#each JMPs as |JMPs|}}
+                            <option>{{JMPs}}</option>
+                        {{/each}}
+                      </select>
+
+                    </div>
+
+                    <div class ="column2">
+
+                      <select class="large-fld">
+                        {{#each WPXs as |WPXs|}}
+                            <option>{{WPXs}}</option>
+                        {{/each}}
+                      </select>
+
+                    </div>
+
+                    <div class ="column2">
+
+                        <input type="text" class="large-fld" name="NoF" value="" placeholder="# of fixtures?">
+
+                    </div>
+
+                    <div class ="column2">
+
+                        <input type="text" class="large-btn large-magnify" name="Calculate" value="Calculate!">
+
+                    </div>
+
+                </div>
+
+        </form>
+
+    </div>
+
+</body>

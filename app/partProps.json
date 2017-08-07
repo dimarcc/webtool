@@ -1,0 +1,215 @@
+{
+  "PSUs": [
+    {
+      "WPX-PSU-40": [
+        {
+          "voltage":"48",
+          "power":"40"
+        }
+      ]
+    }
+
+    {
+      "WPX-PSU-80": [
+        {
+          "voltage":"48",
+          "power":"80"
+        }
+      ]
+    }
+
+    {
+      "WPX-PSU-120": [
+        {
+          "voltage":"48",
+          "power":"120"
+        }
+      ]
+    }
+
+    {
+      "WPX-PSU-240": [
+        {
+          "voltage":"48",
+          "power":"240"
+        }
+      ]
+    }
+
+    {
+      "WPX-PSU-320": [
+        {
+          "voltage":"48",
+          "power":"320"
+        }
+      ]
+    }
+
+    {
+      "WPX-PSU-600": [
+        {
+          "voltage":"48",
+          "power":"600"
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "LDRs": [
+    {
+      "WPX-LDR-8": [
+        {
+          "internalresistance": ".049"
+        }
+      ]
+    }
+
+    {
+      "WPX-LDR-25": [
+        {
+          "internalresistance": ".1305"
+        }
+      ]
+    }
+  ]
+}
+
+{
+  "JMPs": [
+    {
+      "WPX-JMP-1": [
+        "internalresistance": ".015"
+      ]
+    }
+
+    {
+      "WPX-JMP-2": [
+        "internalresistance": ".019"
+      ]
+    }
+
+    {
+      "WPX-JMP-4": [
+        "internalresistance": ".029"
+      ]
+    }
+
+    {
+      "WPX-JMP-8": [
+        "internalresistance": ".049"
+      ]
+    }
+
+    {
+      "WPX-JMP-12": [
+        "internalresistance": ".069"
+      ]
+    }
+
+    {
+      "WPX-JMP-16": [
+        "internalresistance": ".089"
+      ]
+    }
+
+    {
+      "WPX-JMP-20": [
+        "internalresistance": ".109"
+      ]
+    }
+  ]
+}
+
+{
+  "WPXs": [
+    {
+      "WPX2": [
+        {
+          "SO": [
+            {
+              "internalresistance": ".01",
+              "power": "15"
+            }
+          ]
+        }
+
+        {
+          "HO": [
+            {
+              "internalresistance": ".01",
+              "power": "23"
+            }
+          ]
+        }
+      ]
+    }
+
+    {
+      "WPX4": [
+        {
+          "SO": [
+            {
+              "internalresistance": ".02",
+              "power": "29"
+            }
+          ]
+        }
+
+        {
+          "HO": [
+            {
+              "internalresistance": ".02",
+              "power": "45"
+            }
+          ]
+        }
+      ]
+    }
+
+    {
+      "WPX6": [
+        {
+          "SO": [
+            {
+              "internalresistance": ".03",
+              "power": "44"
+            }
+          ]
+        }
+
+        {
+          "HO": [
+            {
+              "internalresistance": ".03",
+              "power": "68"
+            }
+          ]
+        }
+      ]
+    }
+
+    {
+      "WPX8": [
+        {
+          "SO": [
+            {
+              "internalresistance": ".03",
+              "power": "57"
+            }
+          ]
+        }
+
+        {
+          "HO": [
+            {
+              "internalresistance": ".03",
+              "power": "90"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
