@@ -25,4 +25,7 @@ export default function() {
   */
 
   this.get('/psus');
+  this.get('/ldrs');
+  this.get('/jmps');
+  this.get('/wpxes');
 }

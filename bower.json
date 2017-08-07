@@ -1,6 +1,6 @@
 {
   "name": "webtool",
   "dependencies": {
-    "semantic-ui": "^2.2.12"
+    "semantic-ui": "^2.2.13"
   }
 }

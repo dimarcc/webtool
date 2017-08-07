@@ -1,17 +1,11 @@
-<div class="ui vertical strip segment">
+<br>
+<div class="ui header">Let's find the right product combination for your needs...</div>
 
-  <div class="ui header">Let's find the right product combination for your needs...</div>
-
-  <p>Please choose an item from each drop-down and hit that "calculate" button!</p>
-
-  <select class="large-fld">
-    {{#each model.psus as |psu|}}
-        <option>{{psu.name}}</option>
-    {{/each}}
-  </select>
+<br>
+<p>Please choose an item from each drop-down and hit that "calculate" button!</p>
 
   {{#ui-dropdown class="selection" selected="psu" onChange=(action (mut psu))}}
-  <div class="default text">psu</div>
+  <div class="default text">Which PSU?</div>
   <i class="dropdown icon"></i>
   <div class="menu">
     {{#each model.psus as |psu|}}
@@ -22,34 +16,41 @@
   </div>
   {{/ui-dropdown}}
 
+  {{#ui-dropdown class="selection" selected="ldr" onChange=(action (mut ldr))}}
+  <div class="default text">Which LDR?</div>
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    {{#each model.ldrs as |ldr|}}
+      <div class="item" data-value="{{ldr.id}}">
+        {{ldr.name}}
+      </div>
+    {{/each}}
+  </div>
+  {{/ui-dropdown}}
 
+  {{#ui-dropdown class="selection" selected="jmp" onChange=(action (mut jmp))}}
+  <div class="default text">Which JMP?</div>
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    {{#each model.jmps as |jmp|}}
+      <div class="item" data-value="{{jmp.id}}">
+        {{jmp.name}}
+      </div>
+    {{/each}}
+  </div>
+  {{/ui-dropdown}}
 
-
-  <select class="large-fld">
-                        {{#each LDRs as |LDRs|}}
-                            <option>{{LDRs}}</option>
-                        {{/each}}
-                      </select>
-
-
-
-
-
-  <select class="large-fld">
-                        {{#each JMPs as |JMPs|}}
-                            <option>{{JMPs}}</option>
-                        {{/each}}
-                      </select>
-
-
-
-
-
-  <select class="large-fld">
-                        {{#each WPXs as |WPXs|}}
-                            <option>{{WPXs}}</option>
-                        {{/each}}
-                      </select>
+  {{#ui-dropdown class="selection" selected="wpx" onChange=(action (mut wpx))}}
+  <div class="default text">Which WPX?</div>
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    {{#each model.wpxes as |wpx|}}
+      <div class="item" data-value="{{wpx.id}}">
+        {{wpx.name}}
+      </div>
+    {{/each}}
+  </div>
+  {{/ui-dropdown}}
 
 
 
@@ -59,9 +60,6 @@
     <input type="text" name="NoF" value="" placeholder="# of fixtures?">
   </div>
 
-  <button class="ui button primary">
+  <button class="ui button primary" {{action 'calcbtn'}}>
         Calculate
-      </button>
-
-
-</div>
+  </button>
