@@ -80,43 +80,57 @@
   "JMPs": [
     {
       "WPX-JMP-1": [
-        "internalresistance": ".015"
+        {
+          "internalresistance": ".015"
+        }
       ]
     }
 
     {
       "WPX-JMP-2": [
-        "internalresistance": ".019"
+        {
+          "internalresistance": ".019"
+        }
       ]
     }
 
     {
       "WPX-JMP-4": [
-        "internalresistance": ".029"
+        {
+          "internalresistance": ".029"
+        }
       ]
     }
 
     {
       "WPX-JMP-8": [
-        "internalresistance": ".049"
+        {
+          "internalresistance": ".049"
+        }
       ]
     }
 
     {
       "WPX-JMP-12": [
-        "internalresistance": ".069"
+        {
+          "internalresistance": ".069"
+        }
       ]
     }
 
     {
       "WPX-JMP-16": [
-        "internalresistance": ".089"
+        {
+          "internalresistance": ".089"
+        }
       ]
     }
 
     {
       "WPX-JMP-20": [
-        "internalresistance": ".109"
+        {
+          "internalresistance": ".109"
+        }
       ]
     }
   ]
