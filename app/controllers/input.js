@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
 
   actions: {
       calculateValue(){
-        console.log(this.get('psuS').get('psuPower'));
+        console.log(this.get('psuS').get('supplyVoltage'));
       }
   }
 
