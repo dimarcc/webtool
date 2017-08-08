@@ -4,12 +4,12 @@
 <br>
 <p>Please choose an item from each drop-down and hit that "calculate" button!</p>
 
-  {{#ui-dropdown class="selection" selected="psu" onChange=(action (mut psu))}}
+  {{#ui-dropdown class="selection" selected="psu" onChange=(action (mut psuS)) as |execute mapper|}}
   <div class="default text">Which PSU?</div>
   <i class="dropdown icon"></i>
   <div class="menu">
     {{#each model.psus as |psu|}}
-      <div class="item" data-value="{{psu.id}}">
+      <div class="item" data-value="{{map-value mapper psu}}">
         {{psu.name}}
       </div>
     {{/each}}
@@ -60,6 +60,6 @@
     <input type="text" name="NoF" value="" placeholder="# of fixtures?">
   </div>
 
-  <button class="ui button primary" {{action 'calcbtn'}}>
+  <button class="ui button primary" {{action "calculateValue"}}>
         Calculate
   </button>
